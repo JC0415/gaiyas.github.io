@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Random Number Display</title>
+</head>
+<body>
+    <h1>Real-time Random Number</h1>
+    <div id="random_number"></div>
+
+    <script>
+        // 定義一個函數用於從後端獲取隨機數並更新前端顯示
+        function fetchRandomNumberAndUpdate() {
+            fetch('/your-backend-endpoint')
+                .then(response => response.text()) // 返回的是文本而不是 JSON
+                .then(data => {
+                    document.getElementById('random-number').innerText = `Random Number: ${data}`;
+                })
+                .catch(error => {
+                    console.error('Error fetching random number:', error);
+                });
+        }
+
+        // 首次加載頁面時，立即獲取並顯示隨機數
+        fetchRandomNumberAndUpdate();
+
+        // 每秒從後端獲取最新隨機數並更新前端顯示
+        setInterval(fetchRandomNumberAndUpdate, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+
+.selection {
+    display: flex;
+    align-items: center;
+    
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+    position: relative;
+    top: 20px;
+    width: 700px;
+    height: 100px;
+    font-weight: 800;
+}
+
+.question {
+    color: white;
+    position: relative;
+    top: -10px;
+    font-size: 25px;
+    margin: 12px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    font-weight: 800;
+}
+
+.selection {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    position: fixed;
+    left: 240px;
+    padding: 12px; /* 調整選單內容與邊框的距離 */
+    font-size: 20px; /* 調整選單內字體大小 */
+    transform: scale(1.2); /* 將選單放大 1.2 倍 */
+}
+body {
+    background-image: url('gai (1).jpg');
+    /* 如果需要，可以指定其他背景樣式 */
+    background-size: auto;
+    background-repeat:no-repeat ;
+}
+
+/* 樣式化問題和下拉選單 */
+.question-item {
+    margin-top: 50px; /* 根據需要調整 */
+    display: flex; /* 使用彈性盒子佈局 */
+    align-items: center; /* 垂直對齊項目 */
+    flex-direction: row;
+}
+
+.question {
+    position: relative;
+    top: 3px;
+    font-size: 50;
+    margin-right: 20px; /* 在問題和選擇框之間增加一些間距 */
+}
+
+select {
+    padding: 8px;
+    left: 20px;
+    
+    
+}
+
+.selection button {
+    margin-top: -3px;
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    border: none;
+}
+
+
+

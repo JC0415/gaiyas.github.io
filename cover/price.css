@@ -1,0 +1,157 @@
+*{
+    font-family: 'Noto Serif TC', serif;
+}
+body{ background: linear-gradient(to bottom, #aaf, transparent);
+    margin: 0; /* 清除默认的页面边距 */
+    overflow-y: hidden; /* 隐藏垂直滚动条 */
+    position: fixed; 
+
+   
+    
+}
+.header{
+   
+    border-radius: 8px;
+     border-color: #96d38c; 
+    border-width: 0.1px;
+    z-index: 1;
+   
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top:0px
+    
+   
+
+    
+    
+    
+}
+.header button{
+    /* background: linear-gradient(to bottom, #7dbd42 0%, #4CAF50 100%); */
+    cursor: pointer;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    border: #96D38c; 
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #4CAF50;  */
+    font-size: 20px;
+    color: azure;
+    /* background-color: #1a472a; 莫蘭蒂綠色 */
+    background-color: #96D38c; /* 淺綠色 */
+    
+    background-image: linear-gradient(to right, #1a472a, #3f6f4a); 
+    
+    border-radius: 5px;
+    
+
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+   
+    
+   
+}
+hr{
+    width: 1px;
+    color: black;
+    background-color: black;
+    height: 60px;
+    border-radius: -40px;
+}
+.header:hover {
+    background-color: #8cdc3d5c; /* 鼠標懸停時的背景顏色 */
+    
+}
+.location_select{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: 90px;
+    display: flex; /* 將 .location_select 設置為彈性容器 */
+    justify-content: center; /* 將內容水平居中 */
+    align-items: center; /* 將內容垂直居中 */
+    left: 30px;
+}
+.location_select p{
+    font-size: 35px;
+    font-weight: 500;
+    margin-right: 20px; /* 添加一些右邊距 */
+}
+.selection{
+    display: flex; /* 將 .selection 設置為彈性容器 */
+    width: 400px;
+    
+    
+}
+.selection button {
+    margin-left: 10px; /* 添加一些左邊距 */
+    font-size: 15px; /* 調整按鈕字體大小 */
+    border-radius: 30px;
+    border: none;
+    background-color: beige;
+    position: relative;
+    top: 8px;
+     width: 60px; 
+    cursor: pointer;
+    height: 40px;
+}
+.selection select {
+    width: 250px; /* 調整選擇列表的寬度 */
+    height: 40px; /* 調整選擇列表的高度 */
+    font-size: 20px; /* 調整選擇列表中文字的大小 */
+    position: relative;
+    top: 10px;
+}
+.selection button:hover{
+    background-color: #8b8b8b;
+}
+ .location{
+    position: relative;
+    top: 400px;
+    right: 750PX;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.location span {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.location span.high {
+    color: red;
+    font-weight: bold;
+}
+
+.location span.medium {
+    color: #ffa500; /* 橙色 */
+    font-weight: bold;
+}
+
+.location span.low {
+    color: green;
+    font-weight: bold;
+}
+
+.location span.comparison {
+    color: #333; /* 黑色 */
+    font-style: italic;
+}
+
+.location {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc; /* 灰色边框 */
+    background-color: #f9f9f9; /* 浅灰色背景 */
+    width: 100%;
+}

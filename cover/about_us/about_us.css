@@ -1,0 +1,137 @@
+*{
+    font-family: 'Noto Serif TC', serif;
+}
+body{ background: linear-gradient(to bottom, #aaf, transparent);
+    margin: 0; /* 清除默认的页面边距 */
+    overflow-y: hidden; /* 隐藏垂直滚动条 */
+    position: fixed;
+    
+   
+    
+}
+.about_us{
+    display: inline-block;
+    width: 600px;
+    line-height: 1.6;
+    margin-bottom: 20px; /* 段落间距 */
+    
+}
+h1{
+    
+    font-size: 60px; /* 字体大小 */
+    text-align: center;
+    font-weight: 600;
+}
+.introduce{
+    /* background-color: rgba(255, 255, 255, 0.19);   */
+    display: inline-block;
+    font-weight: 300;
+    text-align: center;
+    margin-left: 650px;
+    margin-top: 160px;
+    margin-right: 0px;
+    height: 600;
+    width: 800px;
+    overflow-y: auto; /* 让内容可以滚动 */
+    color: rgb(81, 84, 86);
+    border-radius: 10px;
+    cursor: pointer;
+
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* 添加文字阴影效果 */
+  
+ 
+   
+}
+.content{
+    font-size: 25px;
+
+    height: 738px;
+    display:inline-block;
+   font-weight: 400;
+   text-align: center;
+   
+}
+
+   
+    
+
+
+
+    
+
+.img{
+    width: 550px;
+    height: 700px;
+    border-radius: 0px;
+    display: inline-block;
+    margin-left: 30px;
+   position: fixed;
+    bottom: -30px;
+    left: 200px;
+    
+    transform: translateX(-50%);
+    z-index: 0;
+}
+.header{
+   
+    border-radius: 8px;
+     border-color: #96d38c; 
+    border-width: 0.1px;
+    z-index: 1;
+   
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top:0px
+    
+   
+
+    
+    
+    
+}
+.header button{
+    /* background: linear-gradient(to bottom, #7dbd42 0%, #4CAF50 100%); */
+    cursor: pointer;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    border: #96D38c; 
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #4CAF50;  */
+    font-size: 20px;
+    color: azure;
+    /* background-color: #1a472a; 莫蘭蒂綠色 */
+    background-color: #96D38c; /* 淺綠色 */
+    
+    background-image: linear-gradient(to right, #1a472a, #3f6f4a); 
+    
+    border-radius: 5px;
+    
+
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+   
+    
+   
+}
+hr{
+    width: 1px;
+    color: black;
+    background-color: black;
+    height: 60px;
+    border-radius: -40px;
+}
+.header:hover {
+    background-color: #8cdc3d5c; /* 鼠標懸停時的背景顏色 */
+}
+.remind{
+    font-size: 15px;
+}

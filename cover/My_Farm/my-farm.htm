@@ -1,0 +1,83 @@
+<DOCKTYPE! html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>我的田地</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;500;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="my_farm.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <div class="header">   
+            <button value="HOME" onclick="go_to_page(this.value)">首頁</button>
+            <hr>
+            <button value="MARKET_PRICE" onclick="go_to_page(this.value)" >當前市場價格</button>
+            <hr>
+            <button value="WEATHER" onclick="go_to_page(this.value)">今日氣候狀況</button>
+            <hr>
+            <button value="CONTACT_US" onclick="go_to_page(this.value)">聯絡我們</button>
+            <hr>
+            <button value="ABOUT-US" onclick="go_to_page(this.value)">關於我們</button>
+        </div>    
+            <div class="otherIndex">
+                <p class="temporature">空氣溫度:</p>
+                <p class="mudIndex">空氣濕度:</p>
+            </div>
+       
+        <div class="autoControl">
+            <div class="watering">
+                <img src="water.png" class="waterImg">
+                <button class="waterButton">
+                    澆灌
+                </button>
+            </div>
+            <div class="pesticide">
+                <img src="pesticide.png" class="pesticideImg">
+                <button class="pesticideButton">
+                    噴灑農藥
+                </button>
+            </div>
+            <div class="ph">
+                <img src="ph.png" class="phImg">
+                <p class="PH_WORD">當前PH值:</p>
+               
+            </div>
+
+
+
+
+
+
+        </div>
+        
+        
+    </body>
+    <script>
+        function go_to_page(selectedValue) {
+        // 獲取選擇框的值
+        
+        // 基於選擇的值導航到相應的頁面
+        if (selectedValue === "CONTACT_US") {
+            window.open("../contact_us/contact_us.htm", "_blank");
+        }
+        else if  (selectedValue === "WEATHER") {
+            window.open("../weather.htm", "_blank");
+        }
+        else if  (selectedValue === "MARKET_PRICE") {
+            window.open("../price.htm", "_blank");
+        }
+        else if   (selectedValue === "ABOUT-US") {
+            window.open("../about_us/about_us.htm", "_blank");
+        }
+        else  {
+            window.open("../GAIYAS_WEB_COVER.htm", "_blank");
+        }
+    }
+
+
+    </script>
+
+
+</html>
