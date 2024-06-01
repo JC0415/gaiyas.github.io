@@ -12,6 +12,7 @@ def Main():
 
     # 定义请求参数
     params_list = [
+        {"Authorization": "CWA-A48B1C25-73BD-4DFB-8FCC-D8BC0EC033E2", "locationName": "基隆市"},
         {"Authorization": "CWA-A48B1C25-73BD-4DFB-8FCC-D8BC0EC033E2", "locationName": "宜蘭縣"},
         {"Authorization": "CWA-A48B1C25-73BD-4DFB-8FCC-D8BC0EC033E2", "locationName": "花蓮縣"},
         {"Authorization": "CWA-A48B1C25-73BD-4DFB-8FCC-D8BC0EC033E2", "locationName": "臺東縣"},
