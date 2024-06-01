@@ -73,6 +73,24 @@ select {
     border-radius: 20px;
     border: none;
 }
+@media only screen and (max-width: 600px) {
+    
+    .selection {
+      left: 80px;
+    }
+  }
+  
+  /* 平板電腦螢幕 */
+  @media only screen and (min-width: 601px) and (max-width: 768px) {
+    .selection {
+    left: 110px;
+    }
+    .question {
+     left: 10px;
+    }
+    
+  }
+
 
 
 
