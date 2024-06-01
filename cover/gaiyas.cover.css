@@ -91,6 +91,10 @@ select {
     .selection {
       left: 40px;
     }
+    .question {
+     left: 30px
+    }
+    
   }
   
   /* 平板電腦螢幕 */
